@@ -4,7 +4,7 @@ const puppeteer = require("puppeteer")
 
 ;(async () => {
 	const browser = await puppeteer.launch({
-		headless: false, //! bez ovog se ne otvara browser i ne vidimo u realtime sta se desava
+		headless: false, // bez ovog se ne otvara browser i ne vidimo u realtime sta se desava. To je dobro za production, ali za dev zelimo da vidimo i zato je headless: false
 		defaultViewport: false,
 		userDataDir: "./tmp", // amazon to rememeber our action. Amazon has capture.
 	})
